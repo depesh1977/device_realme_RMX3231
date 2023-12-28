@@ -4,6 +4,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+LOCAL_PATH := device/realme/RMX3231
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_RMX3231.mk
