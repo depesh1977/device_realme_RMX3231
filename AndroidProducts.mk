@@ -6,6 +6,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_RMX3231.mk.mk
+    $(LOCAL_DIR)/twrp_RMX3231.mk
 
 COMMON_LUNCH_CHOICES := twrp__RMX3231.mk-eng
