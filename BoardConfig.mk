@@ -127,7 +127,9 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 TARGET_USES_MKE2FS := true
 
 # TWRP Configuration
-TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+DEVICE_SCREEN_WIDTH := 720
+DEVICE_SCREEN_HEIGHT := 1600
+TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
@@ -135,7 +137,7 @@ TW_USE_TOOLBOX := true
 TW_INCLUDE_NTFS_3G := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_BRIGHTNESS_PATH := '/sys/devices/platform/soc/soc:mm/63100000.dsi/63100000.dsi.0/display/panel0/sprd_backlight/brightness'
-#TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 190
 TW_BACKUP_EXCLUSIONS := /data/fonts
