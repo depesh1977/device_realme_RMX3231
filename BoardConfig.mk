@@ -18,14 +18,14 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := cortex-a55
 
-TARGET_CPU_SMP := true
+#TARGET_CPU_SMP := true
 #ARCH_ARM_HAVE_TLS_REGISTER := true
 
 TARGET_USES_64_BIT_BINDER := true
 
 # Enable CPUSets
-ENABLE_CPUSETS := true
-ENABLE_SCHEDBOOST := true
+#ENABLE_CPUSETS := true
+#ENABLE_SCHEDBOOST := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := RMX3231
@@ -138,20 +138,20 @@ TW_USE_TOOLBOX := true
 TW_INCLUDE_NTFS_3G := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_BRIGHTNESS_PATH := '/sys/devices/platform/soc/soc:mm/63100000.dsi/63100000.dsi.0/display/panel0/sprd_backlight/brightness'
-# TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+#TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 190
 TW_BACKUP_EXCLUSIONS := /data/fonts
-# TW_MTP_DEVICE := /dev/mtp_usb
+#TW_MTP_DEVICE := /dev/mtp_usb
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_APEX := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_NO_SCREEN_BLANK := true
-TW_NO_USB_STORAGE := true
-TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+#TW_NO_USB_STORAGE := true
+#TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 # TW_DEVICE_VERSION := Realme C11 2021
 
-TW_INCLUDE_FASTBOOTD := true
+#TW_INCLUDE_FASTBOOTD := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
 
