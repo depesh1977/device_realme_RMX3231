@@ -102,9 +102,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 
 # Dynamic Partition
 BOARD_SUPER_PARTITION_SIZE := 9126805504
-BOARD_SUPER_PARTITION_GROUPS := group_unisoc
-BOARD_GROUP_UNISOC_PARTITION_LIST := system system_ext vendor product
-BOARD_GROUP_UNISOC_SIZE := 9122611200
+BOARD_SUPER_PARTITION_GROUPS := realme_dynamic_partitions
+BOARD_REALME_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor product
+BOARD_REALME_DYNAMIC_PARTITIONS_SIZE := 9122611200
 
 # Workaround for copying error vendor files to recovery ramdisk
 TARGET_COPY_OUT_PRODUCT := product
@@ -138,7 +138,7 @@ TW_USE_TOOLBOX := true
 TW_INCLUDE_NTFS_3G := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_BRIGHTNESS_PATH := '/sys/devices/platform/soc/soc:mm/63100000.dsi/63100000.dsi.0/display/panel0/sprd_backlight/brightness'
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+# TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 190
 TW_BACKUP_EXCLUSIONS := /data/fonts
