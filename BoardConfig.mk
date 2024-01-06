@@ -123,8 +123,8 @@ PLATFORM_VERSION := 16.1.0
 
 # Decryption
 TW_INCLUDE_CRYPTO := false
-TW_INCLUDE_CRYPTO_FBE := false
-TW_INCLUDE_FBE_METADATA_DECRYPT := false
+#TW_INCLUDE_CRYPTO_FBE := false
+#TW_INCLUDE_FBE_METADATA_DECRYPT := false
 
 # Properties
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
@@ -143,12 +143,11 @@ TW_INCLUDE_NTFS_3G := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_BRIGHTNESS_PATH := '/sys/devices/platform/soc/soc:mm/63100000.dsi/63100000.dsi.0/display/panel0/sprd_backlight/brightness'
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun0/file
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 190
 #TW_BACKUP_EXCLUSIONS := /data/fonts
-TW_MTP_DEVICE := /dev/mtp_usb
-TW_HAS_MTP := true
+#TW_MTP_DEVICE := /dev/mtp_usb
+#TW_HAS_MTP := true
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_APEX := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
