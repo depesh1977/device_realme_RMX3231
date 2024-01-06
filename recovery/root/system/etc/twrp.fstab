@@ -1,8 +1,3 @@
-system /system ext4 ro,barrier=1 wait,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey,slotselect
-system_ext /system_ext ext4 ro,barrier=1 wait,logical,first_stage_mount,slotselect
-vendor /vendor ext4 ro,barrier=1 wait,logical,first_stage_mount,slotselect
-product /product ext4 ro,barrier=1 wait,logical,first_stage_mount,slotselect
-
 /spl                   emmc     /dev/block/mmcblk0boot0                  flags=display=spl;slotselect
 /spl_bk                emmc     /dev/block/mmcblk0boot1                  flags=display=spl_bk
 /uboot                 emmc     /dev/block/by-name/uboot                 flags=display=uboot;slotselect
