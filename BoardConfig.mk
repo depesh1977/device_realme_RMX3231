@@ -56,7 +56,7 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 
 # Prebuilt: DTB
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+#BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 # Kernel - prebuilt
 BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
