@@ -40,7 +40,7 @@ product /product ext4 ro,barrier=1 wait,logical,slotselect
 /dev/block/by-name/prodnv    /prodnv ext4 noatime,nosuid,nodev,nomblk_io_submit,noauto_da_alloc wait,check
 /dev/block/by-name/cache    /cache       ext4 noatime,nosuid,nodev,nomblk_io_submit,noauto_da_alloc wait,check
 /dev/block/by-name/my_preload /my_preload  ext4 noatime,nosuid,nodev,nomblk_io_submit,noauto_da_alloc check
-/dev/block/by-name/userdata	/data	f2fs noatime,nosuid,nodev,discard,inline_xattr,inline_data,inlinecrypt	wait,encryptable=footer,keydirectory=/metadata/vold/metadata_encryption,check,formattable
+/dev/block/by-name/userdata	/data	f2fs noatime,nosuid,nodev,discard,inline_xattr,inline_data,inlinecrypt	wait,encryptable=footer,heck,formattable
 
 /devices/platform/soc/soc:aon/5fff0000.usb/musb-hdrc.*.auto/usb*      auto         vfat defaults voldmanaged=usbdisk:auto
 /devices/platform/soc/soc:ap-apb/71100000.sdio/mmc_host/mmc1/mmc1:*/block/mmcblk1      auto         vfat defaults voldmanaged=sdcard0:auto,encryptable=footer
